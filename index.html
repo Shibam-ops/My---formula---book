@@ -1,0 +1,323 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class 12 Physics Formula Book</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fefbe9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .book {
+      width: 80vw;
+      height: 90vh;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      padding: 2rem;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      position: relative;
+    }
+    .page {
+      display: none;
+      height: 100%;
+      overflow-y: auto;
+    }
+    .page.active {
+      display: block;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .formula-section {
+      margin-bottom: 2rem;
+    }
+    .formula-section h3 {
+      border-bottom: 1px solid #aaa;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .formula {
+      background-color: #f9f9f9;
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      border-left: 4px solid #2980b9;
+      font-size: 1.1rem;
+      white-space: pre-wrap;
+    }
+    .nav-buttons {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    button {
+      padding: 0.5rem 1.5rem;
+      margin: 0 1rem;
+      font-size: 1rem;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="book">
+    <h1>Class 12 Physics Formula Book</h1><div class="page active">
+  <div class="formula-section">
+    <h3>1. Electrostatics</h3>
+    <div class="formula">Coulomb's Law: F = k \frac{q_1 q_2}{r^2}</div>
+    <div class="formula">Electric Field: E = F / q</div>
+    <div class="formula">Electric Potential: V = kQ / r</div>
+  </div>
+  <div class="formula-section">
+    <h3>2. Current Electricity</h3>
+    <div class="formula">Ohm's Law: V = IR</div>
+    <div class="formula">Resistance in Series: R = R₁ + R₂ + ...</div>
+    <div class="formula">Resistance in Parallel: 1/R = 1/R₁ + 1/R₂ + ...</div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="formula-section">
+    <h3>3. Magnetic Effects of Current</h3>
+    <div class="formula">Biot-Savart Law: B = \frac{\mu_0}{4\pi} \cdot \frac{Id\sin\theta}{r^2}</div>
+    <div class="formula">Ampere's Circuital Law: \oint B\cdot dl = \mu_0 I</div>
+  </div>
+  <div class="formula-section">
+    <h3>4. Electromagnetic Induction</h3>
+    <div class="formula">Faraday's Law: emf = - d\phi/dt</div>
+    <div class="formula">Lenz's Law: Direction of induced emf opposes the cause</div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="formula-section">
+    <h3>5. Alternating Current</h3>
+    <div class="formula">Peak Voltage: V₀ = I₀R</div>
+    <div class="formula">RMS Voltage: V = V₀ / \sqrt{2}</div>
+  </div>
+  <div class="formula-section">
+    <h3>6. Optics</h3>
+    <div class="formula">Lens Formula: 1/f = 1/v - 1/u</div>
+    <div class="formula">Magnification: m = h'/h = v/u</div>
+  </div>
+  <div class="formula-section">
+    <h3>7. Modern Physics</h3>
+    <div class="formula">Photoelectric Equation: E = hf - \phi</div>
+    <div class="formula">de Broglie Wavelength: λ = h/p</div>
+  </div>
+</div>
+
+<div class="nav-buttons">
+  <button id="prev">Previous</button>
+  <button id="next">Next</button>
+</div>
+
+  </div>  <script>
+    const pages = document.querySelectorAll('.page');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    let currentPage = 0;
+
+    function showPage(index) {
+      pages.forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+      prev.disabled = index === 0;
+      next.disabled = index === pages.length - 1;
+    }
+
+    prev.onclick = () => {
+      if (currentPage > 0) {
+        currentPage--;
+        showPage(currentPage);
+      }
+    };
+
+    next.onclick = () => {
+      if (currentPage < pages.length - 1) {
+        currentPage++;
+        showPage(currentPage);
+      }
+    };
+
+    showPage(currentPage);
+  </script></body>
+</html><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class 12 Physics Formula Book</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fefbe9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .book {
+      width: 80vw;
+      height: 90vh;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      padding: 2rem;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      position: relative;
+    }
+    .page {
+      display: none;
+      height: 100%;
+      overflow-y: auto;
+    }
+    .page.active {
+      display: block;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .formula-section {
+      margin-bottom: 2rem;
+    }
+    .formula-section h3 {
+      border-bottom: 1px solid #aaa;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .formula {
+      background-color: #f9f9f9;
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      border-left: 4px solid #2980b9;
+      font-size: 1.1rem;
+      white-space: pre-wrap;
+    }
+    .nav-buttons {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    button {
+      padding: 0.5rem 1.5rem;
+      margin: 0 1rem;
+      font-size: 1rem;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="book">
+    <h1>Class 12 Physics Formula Book</h1><div class="page active">
+  <div class="formula-section">
+    <h3>1. Electrostatics</h3>
+    <div class="formula">Coulomb's Law: F = k \frac{q_1 q_2}{r^2}</div>
+    <div class="formula">Electric Field: E = F / q</div>
+    <div class="formula">Electric Potential: V = kQ / r</div>
+  </div>
+  <div class="formula-section">
+    <h3>2. Current Electricity</h3>
+    <div class="formula">Ohm's Law: V = IR</div>
+    <div class="formula">Resistance in Series: R = R₁ + R₂ + ...</div>
+    <div class="formula">Resistance in Parallel: 1/R = 1/R₁ + 1/R₂ + ...</div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="formula-section">
+    <h3>3. Magnetic Effects of Current</h3>
+    <div class="formula">Biot-Savart Law: B = \frac{\mu_0}{4\pi} \cdot \frac{Id\sin\theta}{r^2}</div>
+    <div class="formula">Ampere's Circuital Law: \oint B\cdot dl = \mu_0 I</div>
+  </div>
+  <div class="formula-section">
+    <h3>4. Electromagnetic Induction</h3>
+    <div class="formula">Faraday's Law: emf = - d\phi/dt</div>
+    <div class="formula">Lenz's Law: Direction of induced emf opposes the cause</div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="formula-section">
+    <h3>5. Alternating Current</h3>
+    <div class="formula">Peak Voltage: V₀ = I₀R</div>
+    <div class="formula">RMS Voltage: V = V₀ / \sqrt{2}</div>
+  </div>
+  <div class="formula-section">
+    <h3>6. Optics</h3>
+    <div class="formula">Lens Formula: 1/f = 1/v - 1/u</div>
+    <div class="formula">Magnification: m = h'/h = v/u</div>
+  </div>
+  <div class="formula-section">
+    <h3>7. Modern Physics</h3>
+    <div class="formula">Photoelectric Equation: E = hf - \phi</div>
+    <div class="formula">de Broglie Wavelength: λ = h/p</div>
+  </div>
+</div>
+
+<div class="nav-buttons">
+  <button id="prev">Previous</button>
+  <button id="next">Next</button>
+</div>
+
+  </div>  <script>
+    const pages = document.querySelectorAll('.page');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    let currentPage = 0;
+
+    function showPage(index) {
+      pages.forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+      prev.disabled = index === 0;
+      next.disabled = index === pages.length - 1;
+    }
+
+    prev.onclick = () => {
+      if (currentPage > 0) {
+        currentPage--;
+        showPage(currentPage);
+      }
+    };
+
+    next.onclick = () => {
+      if (currentPage < pages.length - 1) {
+        currentPage++;
+        showPage(currentPage);
+      }
+    };
+
+    showPage(currentPage);
+  </script></body>
+</html>
